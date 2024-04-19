@@ -5,7 +5,7 @@
 class Cauldrongo < Formula
   desc "Fetch Cauldron metrics"
   homepage ""
-  version "0.0.1-next"
+  version "0.0.1"
   license "MIT"
 
   depends_on "git"
@@ -13,16 +13,16 @@ class Cauldrongo < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mdelapenya/cauldrongo/releases/download/v0.0.0/cauldrongo_Darwin_x86_64.tar.gz"
-      sha256 "6d654559250dee7435352dd0c9c54bc23498f91d52acbeee3077d4f66ca58ea5"
+      url "https://github.com/mdelapenya/cauldrongo/releases/download/v0.0.1/cauldrongo_Darwin_x86_64.tar.gz"
+      sha256 "f8c9dc8b4fad7d1deb9d5e2a83b427ba4dd3dfc936e8bccda9e620b79f34baae"
 
       def install
         bin.install "cauldrongo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mdelapenya/cauldrongo/releases/download/v0.0.0/cauldrongo_Darwin_arm64.tar.gz"
-      sha256 "6b943ffa8a43ea55e0cd86a2449111a159a8a0e54b47f5d5be68c7141a6e1e3f"
+      url "https://github.com/mdelapenya/cauldrongo/releases/download/v0.0.1/cauldrongo_Darwin_arm64.tar.gz"
+      sha256 "9f8f2c63e38da0274e8fdf61128bfb4b982afbb21b477e00f86de05a9290b1df"
 
       def install
         bin.install "cauldrongo"
@@ -32,24 +32,24 @@ class Cauldrongo < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/mdelapenya/cauldrongo/releases/download/v0.0.0/cauldrongo_Linux_x86_64.tar.gz"
-      sha256 "cc3771d4a63d3943fa091bedfd1d5e22019c121ed0bb44f00a1139006910b4bd"
+      url "https://github.com/mdelapenya/cauldrongo/releases/download/v0.0.1/cauldrongo_Linux_x86_64.tar.gz"
+      sha256 "41dd749c3123becea031f7825dcee67e37fed62462d50000611b6df4735b2522"
 
       def install
         bin.install "cauldrongo"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/mdelapenya/cauldrongo/releases/download/v0.0.0/cauldrongo_Linux_armv7.tar.gz"
-      sha256 "53b39afdc861f41ffc6eed0ff0af869d386502393775ec6195b8e524c509c74b"
+      url "https://github.com/mdelapenya/cauldrongo/releases/download/v0.0.1/cauldrongo_Linux_armv7.tar.gz"
+      sha256 "299f92b6a62bdecbfe2795c1124d04f5f21126971673c8d2e2e482e4c00f114a"
 
       def install
         bin.install "cauldrongo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mdelapenya/cauldrongo/releases/download/v0.0.0/cauldrongo_Linux_arm64.tar.gz"
-      sha256 "cb52e8c1859d686af404fbb60e5fe8f32d6976e656e457b5fde181bf3edacd4e"
+      url "https://github.com/mdelapenya/cauldrongo/releases/download/v0.0.1/cauldrongo_Linux_arm64.tar.gz"
+      sha256 "b82b999c07a9ae15e6a17300bb2786603663ca18114c100c8e5b1ece05fb91a0"
 
       def install
         bin.install "cauldrongo"
